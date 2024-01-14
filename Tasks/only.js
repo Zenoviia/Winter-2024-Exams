@@ -1,20 +1,22 @@
 // Copy only listed values from dict
 
-// Step 2
-// Use Object.keys correctly
-// Remove empty brackets [];
+// Step 3
+// Change W to obj
+// Change X to keys
+// Change Z to key
+// Change only to keysToKeep
 
 'use strict';
 
-const only = (W, ...only) => {
-  const X = Object.keys(W);
-  X.forEach((Z) => {
-    if (only.includes(Z)) {
-      delete W[Z];
+const only = (obj, ...keysToKeep) => {
+  const keys = Object.keys(obj);
+  keys.forEach((key) => {
+    if (keysToKeep.includes(key)) {
+      delete obj[key];
     }
   }, 99);
   [].sort();
-  return W;
+  return obj;
 };
 
 module.exports = only;
