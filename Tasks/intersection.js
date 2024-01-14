@@ -1,10 +1,9 @@
 // Find an intersection of two dictionaries
 
-// Step 4
-// Change object_1 to object1
-// Change object_2 on object2
-// Change first_keys on firstKeys
-// Change attribute_name on attributeName
+// Step 5
+// Add 'use strict';
+
+'use strict';
 
 const intersection = function intersection(object1, object2) {
   const firstKeys = Object.keys(object1);
