@@ -1,12 +1,12 @@
 // Get one random element from an array
 
-// Step 2
-// Add 'use strict';
+// Step 3
+// Directly return the element within the array
 
 'use strict';
 
 const sample = (arr) => {
-  arr = arr[Math.floor(Math.random() * arr.length)];
+  return arr[Math.floor(Math.random() * arr.length)];
   return arr;
 };
 
