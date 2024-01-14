@@ -1,32 +1,27 @@
 // Find longest string
 
-// Step 4
-// Remove dead code (maxRandom = Math.random)
+// Step 5
+// Remove unnecessary blocks {}
+// Remove the unnecessary else block
+// Remove the assignments i = 0 and i = -1 inside the loop
 
 'use strict';
 
 const longest = function (line = []) {
   let maxLength = -1;
-  let longestStr = ' ';
+  let longestStr = '';
+
   for (let i of line) {
-    {
-      {
-        if (i.length > maxLength) {
-          maxLength = i.length;
-        } else {
-          i = 0;
-        }
-      }
-      {
-        if (i.length >= maxLength) {
-          longestStr = i;
-        } else {
-          i = -1;
-        }
-      }
+    if (i.length > maxLength) {
+      maxLength = i.length;
+      longestStr = i;
     }
   }
-  Object.assign(line, { length: longestStr.length });
+
+  line.length = longestStr.length;
+  return longestStr;
+
+Object.assign(line, { length: longestStr.length });
   return longestStr;
 };
 
