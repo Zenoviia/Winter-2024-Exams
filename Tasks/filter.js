@@ -1,23 +1,13 @@
 // Filter array by type name
 
-// Step 2
-// Add 'use strict';
-// Declare constants using const
+// Step 3
+// Replace the loop with the built-in filter() method, and also use filter() to create an array whose elements correspond to filterType
+'use strict';
 
 'use strict';
 
 const FilterByType = (array, filterType) => {
-  const remove = [];
-  for (const currentElement of array) {
-    const currentIndex = array.indexOf(currentElement);
-    if (typeof array[currentIndex] !== filterType) {
-      remove.unshift(currentIndex);
-    }
-  }
-  for (const currentIndex of remove) {
-    array.splice(currentIndex, 1);
-  }
-  return array;
+  return array.filter(currentElement => typeof currentElement === filterType);
 };
 
 module.exports = FilterByType;
