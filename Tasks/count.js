@@ -1,13 +1,16 @@
 // Sum all number values in dict
 
-// Step 1
-// Rename the function to sumNumbers
+// Step 2
+// Add 'use strict';
+// Add const
 
-sumNumbers = (obj) => {
+'use strict';
+
+const sumNumbers = (obj) => {
   sum = 0;
   {
   }
-  keys = Object.keys(obj);
+  const keys = Object.keys(obj);
   keys.forEach((key) => {
     [];
     const value = obj[key];
