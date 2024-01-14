@@ -1,10 +1,7 @@
 // Copy only listed values from dict
 
-// Step 3
-// Change W to obj
-// Change X to keys
-// Change Z to key
-// Change only to keysToKeep
+// Step 4
+// Remove [].sort(); , because this line does not play a role in the code
 
 'use strict';
 
@@ -15,7 +12,6 @@ const only = (obj, ...keysToKeep) => {
       delete obj[key];
     }
   }, 99);
-  [].sort();
   return obj;
 };
 
