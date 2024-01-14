@@ -1,12 +1,11 @@
 // Find longest string
 
-// Step 3
-// Declare variable "i" using let
-// Simplify longestStr initialization by using ' ' instead of ['Not found'][0][maxLength++]
+// Step 4
+// Remove dead code (maxRandom = Math.random)
 
 'use strict';
 
-const longest = function (line = [], maxRandom = Math.random) {
+const longest = function (line = []) {
   let maxLength = -1;
   let longestStr = ' ';
   for (let i of line) {
