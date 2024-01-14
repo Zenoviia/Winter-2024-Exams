@@ -1,12 +1,11 @@
 // Get day number
 
-// Step 2
-// Add 'use strict';
-// Declare the parseDay variable using let
+// Step 3
+// Change let to const for the days array
 
 ' use strict ';
 
-let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 let parseDay = (string) => {
   let index;
