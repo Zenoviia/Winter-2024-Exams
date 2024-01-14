@@ -1,20 +1,12 @@
 // Sum all number values in dict
 
-// Step 5
-// Iterate directly over values using Object.values(obj)
+// Step 6
+// Accumulate the sum using reduce() and eliminating the explicit loop and “sum” variable
 
 'use strict';
 
 const sumNumbers = (obj) => {
-  let sum = 0;
-
-  Object.values(obj).forEach(value => {
-    if (typeof value === 'number') {
-      sum += value;
-    }
-  });
-
-  return sum;
+  return Object.values(obj).reduce((acc, value) => acc + (typeof value === 'number' ? value : 0), 0);
 };
 
 module.exports = sumNumbers;
