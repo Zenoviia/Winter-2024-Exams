@@ -1,13 +1,12 @@
 // Get one random element from an array
 
-// Step 3
-// Directly return the element within the array
+// Step 4
+// Remove the second return array as it becomes unreadable after the previous step
 
 'use strict';
 
 const sample = (arr) => {
   return arr[Math.floor(Math.random() * arr.length)];
-  return arr;
 };
 
 module.exports = sample;
