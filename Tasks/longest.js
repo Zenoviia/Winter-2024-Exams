@@ -1,9 +1,7 @@
 // Find longest string
 
-// Step 5
-// Remove unnecessary blocks {}
-// Remove the unnecessary else block
-// Remove the assignments i = 0 and i = -1 inside the loop
+// Step 6
+// Remove Object.assign
 
 'use strict';
 
@@ -19,9 +17,6 @@ const longest = function (line = []) {
   }
 
   line.length = longestStr.length;
-  return longestStr;
-
-Object.assign(line, { length: longestStr.length });
   return longestStr;
 };
 
