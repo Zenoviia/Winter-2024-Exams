@@ -1,12 +1,12 @@
 // Sum all number values in dict
 
-// Step 3
-// Remove unnecessary brackets (), {} and []
+// Step 4
+// Change the global variable "sum" to a local variable by adding "let"
 
 'use strict';
 
 const sumNumbers = (obj) => {
-  sum = 0;
+  let sum = 0;
   
   const keys = Object.keys(obj);
   keys.forEach((key) => {
