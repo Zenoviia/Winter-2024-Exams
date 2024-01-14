@@ -1,14 +1,15 @@
 // Return an array without duplicates
 
-// Step 1
-// Change variable's name from "res" to "result"
-// Change "i" to "index"
-// Change "N" to "numberOfElements"
+// Step 2
+// Add 'use strict';
+// Add const
 
-duplicate = (value, numberOfElements) => {
+'use strict' ;
+
+const duplicate = (value, numberOfElements) => {
   if (numberOfElements <= 0) return [];
   else {
-    result = [];
+    const result = [];
     for (let index = 0; index < numberOfElements; index++) {
       result[index] = value;
     }
