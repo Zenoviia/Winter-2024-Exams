@@ -1,17 +1,18 @@
 // Copy only listed values from dict
 
-// Step 4
-// Remove [].sort(); , because this line does not play a role in the code
+// Step 5
+// Save the for...in loop to repeat the properties of the object
+// Modify the original object using delete
 
 'use strict';
 
 const only = (obj, ...keysToKeep) => {
-  const keys = Object.keys(obj);
-  keys.forEach((key) => {
-    if (keysToKeep.includes(key)) {
+  for (const key in obj) {
+    if (!keysToKeep.includes(key)) {
       delete obj[key];
     }
-  }, 99);
+  }
+
   return obj;
 };
 
